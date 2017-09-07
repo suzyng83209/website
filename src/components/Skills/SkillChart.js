@@ -13,8 +13,8 @@ const ColorIndicator = styled.div`
 const Title = styled.div`
   font-family: "Expletus Sans";
   text-transform: uppercase;
-  font-size: 20px;
-  margin: 16px;
+  font-size: 16px;
+  margin: 4px;
 `;
 
 const Label = styled.div`
@@ -33,8 +33,7 @@ const SkillChartWrapper = styled.div`
   width: 50vw;
   min-width: 200px;
   text-align: center;
-  margin: 32px;
-  margin-bottom: 16px;
+  margin: 16px 32px;
   display: inline-block;
   float: left;
 `;

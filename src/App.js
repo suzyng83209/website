@@ -3,15 +3,12 @@ import Intro from "./components/Intro/Intro";
 import Navigator from "./components/Navigator/Navigator";
 import SkillsSection from "./components/Skills/SkillsSection";
 import ProjectsSection from "./components/Projects/ProjectsSection";
-// import ExperienceSection from "./components/Experience/ExperienceSection";
+import ExperienceSection from "./components/Experience/ExperienceSection";
 // import Location from "./components/About/Location";
 
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="App">
@@ -19,8 +16,8 @@ class App extends Component {
         <Intro />
         <SkillsSection />
         <ProjectsSection />
-        {/* <ExperiencePage />
-        <Location /> */}
+        <ExperienceSection />
+        {/* <Location /> */}
       </div>
     );
   }

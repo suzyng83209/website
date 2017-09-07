@@ -77,7 +77,6 @@ class SkillsPage extends React.Component {
                 ]}
                 title="Mobile"
               />
-              <br />
               <SkillChart
                 data={[
                   { label: "Postgres", value: 100, color: "#DDC7DD" },

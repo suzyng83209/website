@@ -1,0 +1,42 @@
+.Intro {
+    background: #A99CAD;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.Intro_Text {
+    font-size: 3.2vw;
+    font-family: "Expletus Sans";
+    text-align: left;
+    align-self: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    div.Text {
+        margin: 2em 1em;
+        color: black;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 100
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black
+    }
+}

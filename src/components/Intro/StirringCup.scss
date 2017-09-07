@@ -1,0 +1,74 @@
+@keyframes enter {
+    0% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.Container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    &>* {
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    animation: enter 3s cubic-bezier(.22, .95, .26, 1);
+}
+
+.Coffee_back {
+    background: #60432f;
+    height: 360px;
+    width: 360px;
+    z-index: 8;
+    box-shadow: 8px 8px #ffffff, inset 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Coffee_fore {
+    background: radial-gradient(#6f4e37, #60432f 50%, #60432f);
+    height: 320px;
+    width: 320px;
+    z-index: 10;
+}
+
+.Cup {
+    background: #f7e9de;
+    height: 400px;
+    width: 400px;
+    box-shadow: inset 8px 8px #ffffff;
+    z-index: 7;
+}
+
+.Handle {
+    background: #f7e9de;
+    box-shadow: inset 6px 12px #ffffff;
+    height: 80px;
+    width: 360px;
+    border-radius: 8px;
+    transform-origin: 100% 50%;
+    right: 50%;
+    margin-right: 0;
+    z-index: 6;
+}
+
+.Cup_Shadow {
+    z-index: -1;
+    border-radius: 0;
+    height: 400px;
+    width: 100%;
+    transform: rotate(45deg);
+    background: linear-gradient(90deg, transparent, transparent 49%, rgba(0, 0, 0, 0.2) 51%, rgba(0, 0, 0, 0.2), transparent);
+}

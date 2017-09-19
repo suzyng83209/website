@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 import Contact from './Contact';
 
@@ -51,8 +51,8 @@ const MenuContainer = styled.div`
 
 class Navigator extends React.Component {
   render = () => (
-    <MenuContainer ref={r => this.navbar = r}>
-      <h2>Menu</h2>
+    <MenuContainer ref={r => (this.navbar = r)}>
+      <h2 style={{ fontFamily: 'Bungee Shade', color: 'white' }}>Menu</h2>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>

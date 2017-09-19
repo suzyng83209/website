@@ -8,7 +8,6 @@ import { SectionTitle } from "../Common";
 
 const SkillsContainer = styled.section`
     display: flex;
-    height: 100vh;
     width: 100%;
     background: lightgrey;
     justify-content: space-around;

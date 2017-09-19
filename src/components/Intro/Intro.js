@@ -42,7 +42,7 @@ class Intro extends React.Component {
 
   render = () => {
     return (
-      <div className="Intro">
+      <section className="Intro">
         <StirringCup />
         <div className="Intro_Text">
           <div className="Text">
@@ -58,7 +58,7 @@ class Intro extends React.Component {
             Enjoy!
           </div>
         </div>
-      </div>
+      </section>
     );
   };
 }

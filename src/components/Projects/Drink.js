@@ -16,8 +16,8 @@ const generateRandomColor = () => {
 
 export default ({ imageUrl }) => {
   const cupColor = generateRandomColor();
-  const height = window.innerHeight * 0.6;
-  const width = height;
+  const width = window.innerWidth * 0.35;
+  const height = 480;
   const imageSize = height * 0.4;
   return (
     <div style={{ display: "flex", alignItems: "flex-end" }}>

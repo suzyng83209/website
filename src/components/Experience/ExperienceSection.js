@@ -1,14 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import ScrollableAnchor from "react-scrollable-anchor";
+import React from 'react';
+import styled from 'styled-components';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
-import ExperienceTimeline from "./ExperienceTimeline";
+import ExperienceTimeline from './ExperienceTimeline';
 
-const ExperienceContainer = styled.div`
+const ExperienceContainer = styled.section`
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   background: white;
 `;
@@ -16,8 +17,11 @@ const ExperienceContainer = styled.div`
 class ExperienceSection extends React.Component {
   render = () => {
     return (
-      <ScrollableAnchor id={"experience"}>
+      <ScrollableAnchor id={'experience'}>
         <ExperienceContainer>
+          <h1 style={{ fontFamily: 'bungee shade', margin: '5%', fontSize: '3.2em' }}>
+            History
+          </h1>
           <ExperienceTimeline />
         </ExperienceContainer>
       </ScrollableAnchor>

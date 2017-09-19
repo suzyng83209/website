@@ -2,8 +2,10 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://suzyng83209.github.io/website/",
   "dependencies": {
     "antd": "^2.13.0",
+    "gh-pages": "^1.0.0",
     "global": "^4.3.2",
     "material-ui": "^0.19.2",
     "node-sass-chokidar": "^0.0.3",
@@ -24,6 +26,8 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
